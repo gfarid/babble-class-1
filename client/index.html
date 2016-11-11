@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Babble Client</title>
+</head>
+<body>
+
+  <h1>Babble Client</h1>
+
+  <h2>GET Form - Status</h2>
+  <form action="http://localhost:9001/status">
+    <button>Get Status</button>
+  </form>
+
+  <h2>POST Form - Echo</h2>
+  <form action="http://localhost:9001/echo" method="POST">
+    <label for="message-input">Enter a message to echo:</label>
+    <input type="text" id="message-input" name="message">
+    <button>Echo</button>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
