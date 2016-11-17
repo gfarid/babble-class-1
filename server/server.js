@@ -6,7 +6,7 @@ var qs = require('querystring');
 
 var server = http.createServer();
 server.on('request', onRequest);
-server.listen(9001);
+server.listen(process.env.PORT);
 
 function onRequest (request, response) {
   console.log(request.url);
