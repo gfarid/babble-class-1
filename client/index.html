@@ -15,8 +15,17 @@
 
   <h2>POST Form - Echo</h2>
   <form action="http://localhost:9001/echo" method="POST">
-    <label for="message-input">Enter a message to echo:</label>
+    <label for="echo-input">Enter a message to echo:</label>
+    <input type="text" id="echo-input" name="echo">
+    <button>Echo</button>
+  </form>
+
+  <h2>POST Form - Message</h2>
+  <form action="http://localhost:9001/message" method="POST">
+    <label for="message-input">Enter a message:</label>
     <input type="text" id="message-input" name="message">
+    <label for="name-input">Enter your name:</label>
+    <input type="text" id="name-input" name="username">
     <button>Echo</button>
   </form>
 
